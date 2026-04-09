@@ -86,7 +86,7 @@ body{
 }
 
 header, main, footer{
-  padding: 24px 0;
+  padding: 8px 0;
   background-color: var(--Purple); 
 }
 
@@ -110,6 +110,8 @@ h2{
 
 h3{
   font-size: 1.5em;
+  color: var(--Yellow);
+  font-weight: 700;
 }
 
 h4{
@@ -127,6 +129,7 @@ p{
 header{
   background-color: var(--Purple);
   margin: 0 auto;
+  padding-top: 16px;
   text-align: center;
 }
 
@@ -135,11 +138,45 @@ header p {
   margin: 0 auto;
   max-width: 30ch;
   font-style: italic;
-  padding-bottom: 32px;
+  font-size: 1.1em;
+  padding-bottom: 40px;
 }
 
 nav{
   background-color: var(--Yellow);
+  padding: 24px;
+}
+
+nav h2{
+  color: var(--Dark-gray);
+  font-family: var(--font-stack);
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900 ;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+li{
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+nav a{
+  background-color: var(--White);
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  padding: 16px;
+  color: blue;
 }
 /*------ MAIN STYLES ------*/
 
