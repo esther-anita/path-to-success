@@ -291,3 +291,20 @@ main > section:last-of-type p{
   border-radius: 12px;
   box-shadow: 5px 4px 3px var(--Dark-gray);
 }
+
+/*----- FOOTER STYLES -----*/
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+footer p, footer a{
+  color: var(--White);
+  font-size: .7em;
+}
+
+footer p{
+  max-width: 12ch;
+}
