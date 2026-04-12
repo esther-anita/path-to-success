@@ -264,10 +264,30 @@ td{
   padding: 16px;
 }
 
-
 /*------ FIRST STEO STYLES ------*/
 main > section:last-of-type{
   background-color: var(--Pink);
+  padding: 8px 0;
 }
 
+main > section:last-of-type p{
+  color: var(--White);
+  max-width: 41ch;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
 
+#first-step a{
+  display: block;
+  width: 325px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--Dark-gray);
+  font-weight: 700;
+  background-color: var(--White);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 5px 4px 3px var(--Dark-gray);
+}
