@@ -84,7 +84,7 @@ body{
 
 header, main, footer{
   padding: 8px 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--Purple); 
 }
 
@@ -105,7 +105,9 @@ h1{
 h2{
   font-size: 2em;
   padding: 8px 0 0 0;
-  margin: 0;
+  margin: 0 16px;
+  grid-column: 1 / -1;
+
 }
 
 h3{
@@ -113,6 +115,7 @@ h3{
   color: var(--Yellow);
   font-weight:600;
   padding: 0 0 8px 0;
+  margin: 0 16px;
 }
 
 h4{
@@ -188,17 +191,14 @@ nav a{
 }
 /*------ MAIN STYLES ------*/
 
-main{
-  padding: 0 16px;
-}
 
 h3 ~ section{
   display: flex;
   flex-direction: column;
   background-color: var(--White);
-  padding: 16px;
+  padding: 8px;
   border-radius: 12px;
-  margin: 16px 8px;
+  margin: 16px 24px;
 }
 
 img{
@@ -209,12 +209,40 @@ img{
   order: -1;
 }
 
-#choose-us {
+main > section:nth-child(2) {
   background-color: var(--Pink);
+  width: 100%;
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  padding: 8px;
 }
 
-.choose-us > div{
-  display: grid;
+#choose-us h2 ~ p{
+  text-align: center;
+  text-wrap: wrap;
+  max-width: 15ch;
+  margin: 8px 16px;
+  padding: 24px 16px;
+  border-radius: 16px;
+  font-weight: 700;
+  background-color: var(--Teal);
 }
+
+#choose-us h2 ~ p:nth-of-type(2){
+  background-color: var(--Lavender);
+}
+
+#choose-us h2 ~ p:nth-of-type(3){
+  background-color: var(--Yellow) ;
+}
+
+#choose-us h2 ~ p:last-of-type{
+  background-color: var(--White);
+}
+
+main > section:last-of-type{
+  background-color: var(--Pink);
+}
+
+
