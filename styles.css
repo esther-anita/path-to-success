@@ -119,28 +119,22 @@ h4{
   font-size: 1.15em;
   color: var(--Purple);
   font-weight: 800;
-  padding: 16px;
+  padding: 8px 16px;
 }
 
 p{
-  max-width: 55ch;
+  width: 100%;
+  max-width: 34ch;
   color: var(--Dark-gray);
-  padding: 16px;
+  padding: 0 16px 8px;
 }
 
-img{
-  display: block;
-  width: 100px;
-  height: 100px;
-
-}
 
 /*----- HEADER STYLES ----*/
 
 header{
   background-color: var(--Purple);
   margin: 0 auto;
-  padding: 0;
   text-align: center;
 }
 
@@ -199,14 +193,26 @@ main{
 }
 
 h3 ~ section{
+  display: flex;
+  flex-direction: column;
   background-color: var(--White);
-  padding: 8px;
+  padding: 16px;
   border-radius: 12px;
   margin: 16px 8px;
 }
 
-main>section:last-of-type{
+img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  order: -1;
+}
+
+#choose-us {
   background-color: var(--Pink);
+  margin: 0 auto;
+  padding: 8px;
 }
 
 .choose-us > div{
