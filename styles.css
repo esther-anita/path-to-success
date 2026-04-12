@@ -50,13 +50,12 @@ table {
 	border-spacing: 0;
 }
 
-
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* ROOT VARIABLES */
 :root{
-  --font-stack: "Inter" sans-serif;
+  --font-stack: "Inter";
   --display-font: "Kavoon";
 
   /* all the colors */  
@@ -67,7 +66,6 @@ table {
   --Pink:#D9526F;
   --Dark-gray:#1E1E1E; 
   --White:#ffffff; 
-
 }
 
 
@@ -79,21 +77,21 @@ body{
   margin: 0 auto;
   box-sizing: border-box;
   background-color: var(--Lavender);
-  font-family:var(--font-stack) ;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.1;
+  font-family: var(--font-stack);
+  line-height: normal;
+  font-weight: 500;
 }
 
 header, main, footer{
   padding: 8px 0;
+  margin: 0;
   background-color: var(--Purple); 
 }
 
 h1,h2{
   font-family: var(--display-font);
-  line-height: 1.5;
   color: var(--White);
+  padding: 0;
 }
 
 h3,h4,p,a,li{
@@ -106,30 +104,43 @@ h1{
 
 h2{
   font-size: 2em;
+  padding: 8px 0 0 0;
+  margin: 0;
 }
 
 h3{
   font-size: 1.5em;
   color: var(--Yellow);
-  font-weight: 700;
+  font-weight:600;
+  padding: 0 0 8px 0;
 }
 
 h4{
   font-size: 1.15em;
+  color: var(--Purple);
+  font-weight: 800;
+  padding: 16px;
 }
 
 p{
   max-width: 55ch;
   color: var(--Dark-gray);
+  padding: 16px;
 }
 
+img{
+  display: block;
+  width: 100px;
+  height: 100px;
+
+}
 
 /*----- HEADER STYLES ----*/
 
 header{
   background-color: var(--Purple);
   margin: 0 auto;
-  padding-top: 16px;
+  padding: 0;
   text-align: center;
 }
 
@@ -138,13 +149,14 @@ header p {
   margin: 0 auto;
   max-width: 30ch;
   font-style: italic;
-  font-size: 1.1em;
-  padding-bottom: 40px;
+  font-weight: 400;
+  padding-bottom: 32px;
 }
 
 nav{
   background-color: var(--Yellow);
-  padding: 24px;
+  padding: 16px 16px 24px 16px;
+  gap: 8px;
 }
 
 nav h2{
@@ -152,9 +164,8 @@ nav h2{
   font-family: var(--font-stack);
   text-transform: uppercase;
   font-style: italic;
-  font-weight: 900 ;
+  font-weight: 700 ;
   font-size: 1.5em;
-  letter-spacing: -1px;
 }
 
 ul{
@@ -162,12 +173,13 @@ ul{
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  gap: 12px;
+  gap: 8px;
 }
 
 li{
   text-transform: uppercase;
-  font-weight: 900;
+  padding: 0 8px;
+
 }
 
 nav a{
@@ -175,11 +187,28 @@ nav a{
   list-style-type: none;
   text-decoration: none;
   display: block;
-  padding: 16px;
-  color: blue;
+  padding: 12px;
+  font-weight: 800;
+  color: var(--Purple);
+
 }
 /*------ MAIN STYLES ------*/
 
+main{
+  padding: 0 16px;
+}
+
+h3 ~ section{
+  background-color: var(--White);
+  padding: 8px;
+  border-radius: 12px;
+  margin: 16px 8px;
+}
+
 main>section:last-of-type{
   background-color: var(--Pink);
+}
+
+.choose-us > div{
+  display: grid;
 }
